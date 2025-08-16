@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Usuario - HU Index</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="welcome-title">¡Bienvenido a tu Portal!</h1>
+            <p class="welcome-subtitle">Hola</p>
+        </header>
+
+        <main class="main-content">
+            <section class="info-section">
+                <h2 class="section-title">Usuario</h2>
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>Elemento</th>
+                            <th>Estado</th>
+                            <th>Última Actualización</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Perfil Personal</strong></td>
+                            <td><span class="status-badge status-active">Activo</span></td>
+                            <td>Hace 2 días</td>
+                            <td>Editar | Ver</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Configuración</strong></td>
+                            <td><span class="status-badge status-active">Activo</span></td>
+                            <td>Hace 1 semana</td>
+                            <td>Modificar | Reset</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Notificaciones</strong></td>
+                            <td><span class="status-badge status-pending">Pendiente</span></td>
+                            <td>Hace 3 días</td>
+                            <td>Activar | Configurar</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Backup de Datos</strong></td>
+                            <td><span class="status-badge status-active">Activo</span></td>
+                            <td>Ayer</td>
+                            <td>Descargar | Programar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="info-section">
+                <h2 class="section-title">Accesos Rápidos</h2>
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <h3>Dashboard</h3>
+                        <p>Accede a tu panel principal con todas las métricas y estadísticas importantes.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Configuración</h3>
+                        <p>Personaliza tu experiencia y ajusta las preferencias según tus necesidades.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Soporte</h3>
+                        <p>¿Necesitas ayuda? Contacta con nuestro equipo de soporte técnico especializado.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Portal de Usuario HU-Index. Diseñado para una experiencia óptima.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Efecto visual sutil: animación de las tarjetas
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.addEventListener('click', function() {
+                this.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    this.style.transform = 'translateY(-5px)';
+                }, 150);
+            });
+        });
+
+        // Efecto en las filas de la tabla
+        document.querySelectorAll('.info-table tr').forEach(row => {
+            row.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = '#f1f2f6';
+            });
+            
+            row.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = '';
+            });
+        });
+
+        // Mensaje de bienvenida dinámico
+        const now = new Date();
+        const hour = now.getHours();
+        let greeting;
+
+        if (hour < 12) {
+            greeting = "¡Buenos días!";
+        } else if (hour < 18) {
+            greeting = "¡Buenas tardes!";
+        } else {
+            greeting = "¡Buenas noches!";
+        }
+
+        document.querySelector('.welcome-title').textContent = greeting + " Bienvenido a tu Portal";
+    </script>
+</body>
+</html>

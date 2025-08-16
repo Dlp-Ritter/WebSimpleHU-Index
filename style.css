@@ -1,0 +1,140 @@
+/* --------- Reset Básico --------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --------- Contenedor principal --------- */
+body {
+    background: #fdf6e3; /* Fondo solarized light */
+    color: #657b83;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* --------- Header --------- */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #268bd2, #2aa198);
+    color: #fdf6e3;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+.welcome-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.welcome-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* --------- Secciones --------- */
+.info-section {
+    margin-bottom: 40px;
+    background: #eee8d5;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.08);
+}
+
+.section-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    border-left: 5px solid #268bd2;
+    padding-left: 10px;
+    color: #073642;
+}
+
+/* --------- Tabla --------- */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.info-table th, .info-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.info-table thead {
+    background: #268bd2;
+    color: #fdf6e3;
+}
+
+.info-table tbody tr {
+    border-bottom: 1px solid #93a1a1;
+    transition: background 0.3s;
+}
+
+.info-table tbody tr:hover {
+    background: #fdf6e3;
+}
+
+/* --------- Badges de estado --------- */
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fdf6e3;
+}
+
+.status-active {
+    background: #859900; /* verde solarized */
+}
+
+.status-pending {
+    background: #b58900; /* amarillo solarized */
+}
+
+/* --------- Tarjetas --------- */
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.feature-card {
+    background: #fdf6e3;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    border-left: 5px solid #268bd2;
+}
+
+.feature-card h3 {
+    color: #268bd2;
+    margin-bottom: 10px;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+/* --------- Footer --------- */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #073642;
+    color: #eee8d5;
+    border-radius: 12px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}

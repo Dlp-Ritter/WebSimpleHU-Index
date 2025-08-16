@@ -7,79 +7,104 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1 class="welcome-title">¡Bienvenido a tu Portal!</h1>
-            <p class="welcome-subtitle">Hola</p>
-        </header>
+    <div class="layout">
 
-        <main class="main-content">
-            <section class="info-section">
-                <h2 class="section-title">Usuario</h2>
-                <table class="info-table">
-                    <thead>
-                        <tr>
-                            <th>Elemento</th>
-                            <th>Estado</th>
-                            <th>Última Actualización</th>
-                            <th>Acciones</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Perfil Personal</strong></td>
-                            <td><span class="status-badge status-active">Activo</span></td>
-                            <td>Hace 2 días</td>
-                            <td>Editar | Ver</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Configuración</strong></td>
-                            <td><span class="status-badge status-active">Activo</span></td>
-                            <td>Hace 1 semana</td>
-                            <td>Modificar | Reset</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Notificaciones</strong></td>
-                            <td><span class="status-badge status-pending">Pendiente</span></td>
-                            <td>Hace 3 días</td>
-                            <td>Activar | Configurar</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Backup de Datos</strong></td>
-                            <td><span class="status-badge status-active">Activo</span></td>
-                            <td>Ayer</td>
-                            <td>Descargar | Programar</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="logo">HU-Portal</h2>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Usuario</a></li>
+                    <li><a href="#">Configuración</a></li>
+                    <li><a href="#">Soporte</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-            <section class="info-section">
-                <h2 class="section-title">Accesos Rápidos</h2>
-                <div class="feature-cards">
-                    <div class="feature-card">
-                        <h3>Dashboard</h3>
-                        <p>Accede a tu panel principal con todas las métricas y estadísticas importantes.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Configuración</h3>
-                        <p>Personaliza tu experiencia y ajusta las preferencias según tus necesidades.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Soporte</h3>
-                        <p>¿Necesitas ayuda? Contacta con nuestro equipo de soporte técnico especializado.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
+        <!-- Contenido principal -->
+        <div class="main-wrapper">
 
-        <footer class="footer">
-            <p>&copy; 2025 Portal de Usuario HU-Index. Diseñado para una experiencia óptima.</p>
-        </footer>
+            <!-- Header superior -->
+            <header class="topbar">
+                <h1 class="welcome-title">¡Bienvenido a tu Portal!</h1>
+                <p class="welcome-subtitle">Hola</p>
+            </header>
+
+            <!-- Main -->
+            <main class="main-content">
+
+                <!-- Sección Usuario -->
+                <section class="info-section">
+                    <h2 class="section-title">Información del Usuario</h2>
+                    <table class="info-table">
+                        <thead>
+                            <tr>
+                                <th>Elemento</th>
+                                <th>Estado</th>
+                                <th>Última Actualización</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Perfil Personal</strong></td>
+                                <td><span class="status-badge status-active">Activo</span></td>
+                                <td>Hace 2 días</td>
+                                <td><a href="#">Editar</a> | <a href="#">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Configuración</strong></td>
+                                <td><span class="status-badge status-active">Activo</span></td>
+                                <td>Hace 1 semana</td>
+                                <td><a href="#">Modificar</a> | <a href="#">Reset</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Notificaciones</strong></td>
+                                <td><span class="status-badge status-pending">Pendiente</span></td>
+                                <td>Hace 3 días</td>
+                                <td><a href="#">Activar</a> | <a href="#">Configurar</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Backup de Datos</strong></td>
+                                <td><span class="status-badge status-active">Activo</span></td>
+                                <td>Ayer</td>
+                                <td><a href="#">Descargar</a> | <a href="#">Programar</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Sección Accesos Rápidos -->
+                <section class="info-section">
+                    <h2 class="section-title">Accesos Rápidos</h2>
+                    <div class="feature-cards">
+                        <div class="feature-card">
+                            <h3>Dashboard</h3>
+                            <p>Accede a tu panel principal con todas las métricas y estadísticas importantes.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>Configuración</h3>
+                            <p>Personaliza tu experiencia y ajusta las preferencias según tus necesidades.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>Soporte</h3>
+                            <p>¿Necesitas ayuda? Contacta con nuestro equipo de soporte técnico especializado.</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>&copy; 2025 Portal de Usuario HU-Index. Diseñado para una experiencia óptima.</p>
+            </footer>
+
+        </div>
     </div>
 
     <script>
-        // Efecto visual sutil: animación de las tarjetas
+        // Animación tarjetas
         document.querySelectorAll('.feature-card').forEach(card => {
             card.addEventListener('click', function() {
                 this.style.transform = 'scale(0.98)';
@@ -89,7 +114,7 @@
             });
         });
 
-        // Efecto en las filas de la tabla
+        // Hover en filas de la tabla
         document.querySelectorAll('.info-table tr').forEach(row => {
             row.addEventListener('mouseenter', function() {
                 this.style.backgroundColor = '#f1f2f6';
@@ -100,7 +125,7 @@
             });
         });
 
-        // Mensaje de bienvenida dinámico
+        // Mensaje dinámico
         const now = new Date();
         const hour = now.getHours();
         let greeting;
